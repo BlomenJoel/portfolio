@@ -6,6 +6,7 @@
 	import Tram from '$lib/components/tram.svelte';
 	import Tramstop from '$lib/components/tramstop.svelte';
 	import CirclingImages from '$lib/components/circlingImages.svelte';
+	import TramstopFront from '$lib/components/tramstop-front.svelte';
 	let el: HTMLCanvasElement;
 	onMount(() => {
 		if (el && browser) {
@@ -36,4 +37,14 @@
 	<h1 class="text-8xl relative z-10 mt-96 w-full text-center">ABOUT ME</h1>
 	<p class="text-center">Some text about me</p>
 	<CirclingImages />
+</section>
+<section class="h-screen relative">
+	<h1 class="text-8xl relative z-10 mt-96 w-full text-center">PROJECTS</h1>
+	<div class=" absolute w-1/2 top-0">
+		<div class=" absolute left-64 top-36 rotate-6">
+			<h1 class="text-2xl">RåFormat</h1>
+			<p>Fullstack development</p>
+		</div>
+		<TramstopFront />
+	</div>
 </section>
