@@ -6,6 +6,7 @@
 	import Tram from '$lib/components/tram.svelte';
 	import Tramstop from '$lib/components/tramstop.svelte';
 	import CirclingImages from '$lib/components/circlingImages.svelte';
+	import HoverCursor from '$lib/components/cursor/HoverCursor.svelte';
 	let el: HTMLCanvasElement;
 	onMount(() => {
 		if (el && browser) {
@@ -34,6 +35,8 @@
 </section>
 <section class="h-screen relative">
 	<h1 class="text-8xl relative z-10 mt-96 w-full text-center">ABOUT ME</h1>
-	<p class="text-center">Some text about me</p>
+	<HoverCursor colorTheme="dark" cursorText="Wow">
+		<p class="text-center">Some text about me</p>
+	</HoverCursor>
 	<CirclingImages />
 </section>

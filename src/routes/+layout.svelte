@@ -1,7 +1,10 @@
 <script lang="ts">
+	import Cursor from '$lib/components/cursor/Cursor.svelte';
 	import Menu from '$lib/components/menu.svelte';
 	import '../app.css';
 </script>
 
 <Menu />
+<Cursor />
+
 <slot />

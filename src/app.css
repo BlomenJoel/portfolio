@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+	html,
+	body {
+		@apply cursor-none;
+	}
+
 	.layout--padding {
 		@apply px-4 md:px-8 2xl:px-24;
 	}
