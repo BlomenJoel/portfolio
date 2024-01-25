@@ -5,6 +5,7 @@
 	import Name from '$lib/components/name.svelte';
 	import Tram from '$lib/components/tram.svelte';
 	import Tramstop from '$lib/components/tramstop.svelte';
+	import CirclingImages from '$lib/components/circlingImages.svelte';
 	let el: HTMLCanvasElement;
 	onMount(() => {
 		if (el && browser) {
@@ -26,12 +27,13 @@
 		<div class="z-0 relative">
 			<Tram />
 		</div>
-		<div class="-translate-y-56 z-10 relative">
+		<div class="-translate-y-56 z-10 relative w-72">
 			<Tramstop />
 		</div>
 	</div>
 </section>
-<section class="h-screen">
+<section class="h-screen relative">
 	<h1 class="text-8xl relative z-10 mt-96 w-full text-center">ABOUT ME</h1>
 	<p class="text-center">Some text about me</p>
+	<CirclingImages />
 </section>
