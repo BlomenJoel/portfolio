@@ -4,7 +4,11 @@
 	import '../app.css';
 </script>
 
-<Menu />
 <Cursor />
 
-<slot />
+<div class="flex">
+	<div class="w-full">
+		<slot />
+	</div>
+	<Menu />
+</div>

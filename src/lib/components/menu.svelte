@@ -1,9 +1,18 @@
 <script lang="ts">
 </script>
 
-<ul class="absolute right-12 top-12 text-4xl scale-50 z-10">
-	<li><a href="/" class="blur-sm">HOME</a></li>
-	<li><a href="/projects">PROJECTS</a></li>
-	<li><a href="/about">ABOUT</a></li>
-	<li><a href="/contact">CONTACT</a></li>
-</ul>
+<div class="w-36 h-screen">
+	<ul class="fixed p-12 h-screen text-2xl z-10 flex flex-col justify-between">
+		<li class=""><a href="/" class="">START</a></li>
+		<li class=""><a href="/projects">PROJECTS</a></li>
+		<li class=""><a href="/about">ABOUT</a></li>
+		<li class=""><a href="/contact">CONTACT</a></li>
+	</ul>
+</div>
+
+<style>
+	ul > li {
+		writing-mode: vertical-lr;
+		color: white;
+	}
+</style>
