@@ -5,7 +5,8 @@
 @layer base {
 	html,
 	body {
-		@apply cursor-none;
+		font-family: 'Proxima Nova', system-ui, sans-serif;
+		@apply cursor-none bg-main;
 	}
 
 	.layout--padding {
