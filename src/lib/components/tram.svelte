@@ -522,21 +522,24 @@
 	.animation-tram {
 		animation: 8s cubic-bezier(0.62, 0.59, 0.85, -0.12) infinite tram-movement;
 	}
-	@keyframes tram-movement {
-		0% {
-			transform: translate3d(-50vw, -25vw, 0px);
+	@media (max-width: 640px) {
+		@keyframes tram-movement {
+			0% {
+				transform: translate3d(-150vw, -75vw, 0px);
+			}
+			100% {
+				transform: translate3d(360vw, 180vw, 0px);
+			}
 		}
-		/* 12% {
-			transform: translate3d(0, 0, 0px);
-		} */
-		/* 20% {
-			transform: translate3d(0px, 0px, 0px);
-		} */
-		/*30% {
-			transform: translate3d(0px, 0px, 0px);
-		} */
-		100% {
-			transform: translate3d(120vw, 60vw, 0px);
+	}
+	@media (min-width: 640px) {
+		@keyframes tram-movement {
+			0% {
+				transform: translate3d(-50vw, -25vw, 0px);
+			}
+			100% {
+				transform: translate3d(120vw, 60vw, 0px);
+			}
 		}
 	}
 </style>

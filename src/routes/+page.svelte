@@ -30,8 +30,8 @@
 			<Role />
 		</HoverCursor>
 	</div>
-	<div class="-translate-y-32">
-		<div class="z-0 relative">
+	<div class=" absolute top-32 left-0">
+		<div class="z-0 relative overflow-x-clip w-screen">
 			<Tram />
 		</div>
 		<div class="-translate-y-56 z-10 relative w-72">

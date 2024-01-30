@@ -44,14 +44,14 @@
 
 <div bind:this={trigger}>
 	<div class="wrapper-shoes absolute -left-[10rem] top-0">
-		<div class=" rotating flex h-[40rem] w-[40rem]">
+		<div class=" rotating flex md:h-[40rem] md:w-[40rem] h-[20rem] w-[20rem]">
 			{#each images as img, index}
 				<div
-					class="wrapper-shoe absolute w-32
-				{index === 0 && 'top-[16rem] left-0'} 
-				{index === 1 && 'top-0 left-[16rem]'} 
-				{index === 2 && 'top-[16rem] right-0'} 
-				{index === 3 && 'bottom-0 right-[16rem]'}"
+					class="wrapper-shoe absolute md:w-32 w-16
+				{index === 0 && 'md:top-[16rem] top-[8rem] left-0'} 
+				{index === 1 && 'top-0 md:left-[16rem] left-[8rem]'} 
+				{index === 2 && 'md:top-[16rem] top-[8rem] right-0'} 
+				{index === 3 && 'bottom-0 md:right-[16rem] right-[8rem]'}"
 				>
 					<img src={img} alt="img" class="rotating-shoes" />
 				</div>
