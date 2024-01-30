@@ -7,6 +7,7 @@
 	import Tramstop from '$lib/components/tramstop.svelte';
 	import CirclingImages from '$lib/components/circlingImages.svelte';
 	import HoverCursor from '$lib/components/cursor/HoverCursor.svelte';
+	import Role from '$lib/components/role.svelte';
 	let el: HTMLCanvasElement;
 	onMount(() => {
 		if (el && browser) {
@@ -19,10 +20,15 @@
 	<div id="text-input" contenteditable="true" />
 	<div class="container" />
 </div>
-<canvas bind:this={el} class="absolute left-0 top-0 z-0" />
+<!-- <canvas bind:this={el} class="absolute left-0 top-0 z-0" /> -->
 <section class="h-screen">
 	<div class="z-20 relative layout--padding">
-		<Name />
+		<HoverCursor colorTheme="dark" cursorText="WHAT A GUY!">
+			<Name />
+		</HoverCursor>
+		<HoverCursor colorTheme="light" cursorText="HE CAN IT ALL!">
+			<Role />
+		</HoverCursor>
 	</div>
 	<div class="-translate-y-32">
 		<div class="z-0 relative">
