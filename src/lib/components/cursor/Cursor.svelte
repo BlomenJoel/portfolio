@@ -46,8 +46,6 @@
 		pointer-events: none;
 		z-index: 100;
 		background: black;
-		filter: invert(1);
-		mix-blend-mode: difference;
 		text-align: center;
 		letter-spacing: 0.1rem;
 	}

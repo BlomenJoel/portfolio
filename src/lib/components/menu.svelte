@@ -13,7 +13,7 @@
 						trigger: section,
 						start: 'top 30%',
 						end: 'bottom 30%',
-						markers: true,
+						markers: false,
 						onEnter: (self: any) => {
 							currentId = self.trigger.id;
 						},

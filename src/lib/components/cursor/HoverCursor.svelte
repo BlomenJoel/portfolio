@@ -37,9 +37,7 @@
 						width: '30px',
 						innerText: '',
 						ease: 'elastic',
-						padding: '0px',
-						filter: 'invert(1)',
-						mixBlendMode: 'difference'
+						padding: '0px'
 					});
 				});
 			}

@@ -8,6 +8,7 @@
 	import CirclingImages from '$lib/components/circlingImages.svelte';
 	import HoverCursor from '$lib/components/cursor/HoverCursor.svelte';
 	import Role from '$lib/components/role.svelte';
+	import Face from '$lib/components/face.svelte';
 	let el: HTMLCanvasElement;
 	onMount(() => {
 		if (el && browser) {
@@ -17,16 +18,36 @@
 </script>
 
 <!-- <canvas bind:this={el} class="absolute left-0 top-0 z-0" /> -->
-<section class="h-screen md:pr-36 pr-16 bg-secondary" id="start">
-	<div class="z-20 relative layout--padding">
-		<HoverCursor colorTheme="dark" cursorText="WHAT A GUY!">
-			<Name />
-		</HoverCursor>
-		<HoverCursor colorTheme="light" cursorText="HE CAN IT ALL!">
-			<Role />
+<section class="h-screen md:pr-36 pr-16 bg-secondary flex flex-col justify-center" id="start">
+	<div class="z-20 relative layout--padding flex justify-center">
+		<HoverCursor colorTheme="dark" cursorText="he's not this pixly live">
+			<div class="w-96">
+				<Face />
+			</div>
 		</HoverCursor>
 	</div>
-	<div class=" absolute top-32 left-0">
+</section>
+<section class="h-screen md:pr-36 pr-16 bg-main" id="projects">
+	<HoverCursor colorTheme="dark" cursorText="WHAT A GUY!">
+		<h1 class="text-8xl relative z-10 w-full text-center">PROJECTS IM PROUD OF</h1>
+		<ul>
+			<li>RÅFORMAT</li>
+			<li>QUEENSLAB</li>
+			<li>BELID</li>
+			<li>PARKLANE?</li>
+		</ul>
+	</HoverCursor>
+</section>
+<section class="h-screen relative bg-secondary md:pr-36 pr-16" id="about">
+	<h1 class="text-8xl relative z-10 w-full text-center">ABOUT ME</h1>
+	<HoverCursor colorTheme="dark" cursorText="Wow">
+		<p class="text-center">Some text about me</p>
+	</HoverCursor>
+	<CirclingImages />
+</section>
+
+<section class="h-screen md:pr-36 pr-16 bg-main relative" id="contact">
+	<div class="absolute left-0">
 		<div class="z-0 relative overflow-x-clip w-screen">
 			<Tram />
 		</div>
@@ -34,11 +55,7 @@
 			<Tramstop />
 		</div>
 	</div>
-</section>
-<section class="h-screen relative bg-main md:pr-36 pr-16" id="about">
-	<h1 class="text-8xl relative z-10 w-full text-center">ABOUT ME</h1>
-	<HoverCursor colorTheme="dark" cursorText="Wow">
-		<p class="text-center">Some text about me</p>
+	<HoverCursor colorTheme="dark" cursorText="WHAT A GUY!">
+		<h1 class="text-8xl relative z-10 w-full text-center">JUST LIKE TRAMS I AM VERY REACHABLE</h1>
 	</HoverCursor>
-	<CirclingImages />
 </section>
