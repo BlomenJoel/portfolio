@@ -7,7 +7,7 @@
 <Cursor />
 
 <div class="flex">
-	<div class="w-full">
+	<div class="w-full flex flex-col">
 		<slot />
 	</div>
 	<Menu />

@@ -16,12 +16,8 @@
 	});
 </script>
 
-<div class="content">
-	<div id="text-input" contenteditable="true" />
-	<div class="container" />
-</div>
 <!-- <canvas bind:this={el} class="absolute left-0 top-0 z-0" /> -->
-<section class="h-screen">
+<section class="h-screen md:pr-36 pr-16 bg-secondary" id="start">
 	<div class="z-20 relative layout--padding">
 		<HoverCursor colorTheme="dark" cursorText="WHAT A GUY!">
 			<Name />
@@ -39,8 +35,8 @@
 		</div>
 	</div>
 </section>
-<section class="h-screen relative">
-	<h1 class="text-8xl relative z-10 mt-96 w-full text-center">ABOUT ME</h1>
+<section class="h-screen relative bg-main md:pr-36 pr-16" id="about">
+	<h1 class="text-8xl relative z-10 w-full text-center">ABOUT ME</h1>
 	<HoverCursor colorTheme="dark" cursorText="Wow">
 		<p class="text-center">Some text about me</p>
 	</HoverCursor>
