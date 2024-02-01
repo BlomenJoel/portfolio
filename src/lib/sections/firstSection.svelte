@@ -2,8 +2,9 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import HoverCursor from '$lib/components/cursor/HoverCursor.svelte';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-	import FaceImg from './faceImg.svelte';
+	import FaceImg from '$lib/components/faceImg.svelte';
 
 	let trigger: HTMLElement | null = null;
 
@@ -164,6 +165,15 @@
 	});
 </script>
 
-<div bind:this={trigger}>
-	<FaceImg />
-</div>
+<section
+	class="h-screen p-8 md:p-24 md:pr-36 pr-16 bg-secondary flex flex-col justify-center overflow-clip"
+	id="start"
+>
+	<div class="z-20 relative layout--padding flex justify-center">
+		<HoverCursor colorTheme="dark" cursorText="this is me">
+			<div class="w-96" bind:this={trigger}>
+				<FaceImg />
+			</div>
+		</HoverCursor>
+	</div>
+</section>

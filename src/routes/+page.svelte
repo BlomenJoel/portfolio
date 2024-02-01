@@ -3,21 +3,10 @@
 	import Tramstop from '$lib/components/tramstop.svelte';
 	import CirclingImages from '$lib/components/circlingImages.svelte';
 	import HoverCursor from '$lib/components/cursor/HoverCursor.svelte';
-	import Face from '$lib/components/face/face.svelte';
+	import FirstSection from '$lib/sections/firstSection.svelte';
 </script>
 
-<section
-	class="h-screen p-8 md:p-24 md:pr-36 pr-16 bg-secondary flex flex-col justify-center"
-	id="start"
->
-	<div class="z-20 relative layout--padding flex justify-center">
-		<HoverCursor colorTheme="dark" cursorText="this is me">
-			<div class="w-96">
-				<Face />
-			</div>
-		</HoverCursor>
-	</div>
-</section>
+<FirstSection />
 <section class="p-8 md:p-24 md:pr-36 pr-16 bg-main flex flex-col items-center" id="projects">
 	<h1 class="text-6xl text-center text-white font-bold">MOST OF THE WORK I'VE DONE</h1>
 	<p class="text-2xl w-1/3 text-center text-white font-bold">
@@ -84,7 +73,7 @@
 </section>
 
 <section class="h-screen p-8 md:p-24 md:pr-36 pr-16 bg-main relative" id="contact">
-	<div class="absolute right-0 bottom-0">
+	<div class="absolute right-0 bottom-0 z-0 pointer-events-none">
 		<div class="z-0 overflow-clip w-screen h-screen">
 			<Tram />
 		</div>
@@ -92,5 +81,8 @@
 			<Tramstop />
 		</div>
 	</div>
-	<h1 class="text-6xl text-center text-white font-bold">THIS IS A TRAM</h1>
+	<h1 class="text-6xl text-center text-white font-bold">REACH OUT</h1>
+	<HoverCursor colorTheme="dark" cursorText="REACH OUT" link="mailto:blomenjoel@gmail.com">
+		<h1 class="text-6xl text-center text-white font-bold mt-96">blomenjoel@gmail.com</h1>
+	</HoverCursor>
 </section>
