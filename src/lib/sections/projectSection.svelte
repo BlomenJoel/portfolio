@@ -10,11 +10,11 @@
 			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://raformat.se/sv/">
 				<li class="p-12 flex md:flex-row flex-col gap-4 items-center">
 					<img src="/raformat.png" alt="raformat webpage" class="md:w-2/3" />
-					<div class="md:w-1/3 w-full">
-						<h3 class=" text-white text-4xl font-bold">RÅFORMAT</h3>
-						<p class=" text-white">SVELTEKIT</p>
-						<p class=" text-white">PAYLOAD</p>
-						<p class=" text-white">GSAP</p>
+					<div class="md:w-1/3 w-full text-white">
+						<h3 class=" text-3xl">RÅFORMAT</h3>
+						<p>SVELTEKIT</p>
+						<p>PAYLOAD</p>
+						<p>GSAP</p>
 					</div>
 				</li>
 			</HoverCursor>
@@ -27,11 +27,11 @@
 			>
 				<li class="p-12 flex md:flex-row flex-col gap-4 items-center">
 					<img src="/blg.png" alt="Belid Lightning Group webpage" class="md:w-2/3" />
-					<div class="md:w-1/3 w-full">
-						<h3 class=" text-white text-4xl font-bold">BELID LIGHTNING GROUP</h3>
-						<p class=" text-white">SVELTEKIT</p>
-						<p class=" text-white">PAYLOAD</p>
-						<p class=" text-white">GSAP</p>
+					<div class="md:w-1/3 w-full text-white">
+						<h3 class="text-3xl">BELID LIGHTNING GROUP</h3>
+						<p>SVELTEKIT</p>
+						<p>PAYLOAD</p>
+						<p>GSAP</p>
 					</div>
 				</li>
 			</HoverCursor>
@@ -40,11 +40,11 @@
 			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://queenslab.co/en/">
 				<li class="p-12 flex md:flex-row flex-col gap-4 items-center">
 					<img src="/queenslab.png" alt="QueensLab webpage" class="md:w-2/3" />
-					<div class="md:w-1/3 w-full">
-						<h3 class=" text-white text-4xl font-bold">QUEENSLAB</h3>
-						<p class=" text-white">SVELTEKIT</p>
-						<p class=" text-white">PAYLOAD</p>
-						<p class=" text-white">GSAP</p>
+					<div class="md:w-1/3 w-full text-white">
+						<h3 class="text-3xl">QUEENSLAB</h3>
+						<p>SVELTEKIT</p>
+						<p>PAYLOAD</p>
+						<p>GSAP</p>
 					</div>
 				</li>
 			</HoverCursor>
