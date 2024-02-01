@@ -170,7 +170,7 @@
 	id="start"
 >
 	<div class="z-20 relative layout--padding flex justify-center">
-		<HoverCursor colorTheme="dark" cursorText="this is me">
+		<HoverCursor colorTheme="dark" cursorText="THIS IS ME">
 			<div class="w-96" bind:this={trigger}>
 				<FaceImg />
 			</div>
