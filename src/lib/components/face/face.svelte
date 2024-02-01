@@ -17,8 +17,7 @@
 						trigger,
 						end: 'bottom 30%',
 						start: 'top 30%',
-						scrub: 0.5,
-						toggleActions: 'play pause play reverse'
+						scrub: 0.5
 					}
 				})
 				// LEFT

@@ -32,7 +32,7 @@
 <div class="absolute right-0 md:w-36 w-16 h-screen">
 	<ul class="fixed items-center h-screen text-2xl z-10 flex flex-col justify-evenly">
 		{#each pages as page}
-			<li class={currentId === page ? 'underline' : ''}>
+			<li class={currentId === page ? 'text-white font-bold' : 'text-inactive font-normal'}>
 				<a href="/#{page}" class="uppercase">{page}</a>
 			</li>
 		{/each}
@@ -45,6 +45,5 @@
 	}
 	ul > li {
 		writing-mode: vertical-lr;
-		color: white;
 	}
 </style>

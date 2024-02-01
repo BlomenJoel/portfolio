@@ -4,7 +4,8 @@
 	import { onMount } from 'svelte';
 
 	export let cursorText: string,
-		colorTheme: 'dark' | 'light' = 'dark';
+		colorTheme: 'dark' | 'light' = 'dark',
+		link = '';
 
 	let element: HTMLElement | null = null;
 
@@ -45,7 +46,13 @@
 	});
 </script>
 
-{#if cursorText}
+{#if link}
+	<div bind:this={element}>
+		<a href={link} aria-label={link} id={link} target="_blank" rel="noreferrer">
+			<slot />
+		</a>
+	</div>
+{:else if cursorText}
 	<div bind:this={element}>
 		<slot />
 	</div>
