@@ -1,23 +1,11 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { browser } from '$app/environment';
-	import { createScene } from '$lib/three/start';
-	import Name from '$lib/components/name.svelte';
 	import Tram from '$lib/components/tram.svelte';
 	import Tramstop from '$lib/components/tramstop.svelte';
 	import CirclingImages from '$lib/components/circlingImages.svelte';
 	import HoverCursor from '$lib/components/cursor/HoverCursor.svelte';
-	import Role from '$lib/components/role.svelte';
-	import Face from '$lib/components/face.svelte';
-	let el: HTMLCanvasElement;
-	onMount(() => {
-		if (el && browser) {
-			createScene(el);
-		}
-	});
+	import Face from '$lib/components/face/face.svelte';
 </script>
 
-<!-- <canvas bind:this={el} class="absolute left-0 top-0 z-0" /> -->
 <section class="h-screen md:pr-36 pr-16 bg-secondary flex flex-col justify-center" id="start">
 	<div class="z-20 relative layout--padding flex justify-center">
 		<HoverCursor colorTheme="dark" cursorText="he's not this pixly live">
@@ -47,11 +35,11 @@
 </section>
 
 <section class="h-screen md:pr-36 pr-16 bg-main relative" id="contact">
-	<div class="absolute left-0">
-		<div class="z-0 relative overflow-x-clip w-screen">
+	<div class="absolute right-0">
+		<div class="z-0 overflow-clip w-screen h-screen">
 			<Tram />
 		</div>
-		<div class="-translate-y-56 z-10 relative w-72">
+		<div class=" z-10 absolute w-72 top-28">
 			<Tramstop />
 		</div>
 	</div>
