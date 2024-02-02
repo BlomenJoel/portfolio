@@ -5,7 +5,7 @@
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 	let trigger: HTMLElement | null = null;
-	const images = ['birken.png', 'birken.png', 'birken.png', 'birken.png'];
+	const images = ['everyday-shoe.png', 'running-shoe.png', 'bike-shoe.png', 'birken.png'];
 	onMount(() => {
 		if (browser && trigger) {
 			gsap.registerPlugin(ScrollTrigger);
@@ -43,11 +43,11 @@
 </script>
 
 <div bind:this={trigger}>
-	<div class="wrapper-shoes absolute -left-[10rem] top-0">
+	<div class="wrapper-shoes absolute -left-[6rem] bottom-0">
 		<div class=" rotating flex md:h-[40rem] md:w-[40rem] h-[20rem] w-[20rem]">
 			{#each images as img, index}
 				<div
-					class="wrapper-shoe absolute md:w-32 w-16
+					class="wrapper-shoe absolute md:w-32 w-24
 				{index === 0 && 'md:top-[16rem] top-[8rem] left-0'} 
 				{index === 1 && 'top-0 md:left-[16rem] left-[8rem]'} 
 				{index === 2 && 'md:top-[16rem] top-[8rem] right-0'} 
