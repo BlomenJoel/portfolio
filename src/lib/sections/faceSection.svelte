@@ -11,14 +11,15 @@
 	onMount(() => {
 		if (browser && trigger) {
 			gsap.registerPlugin(ScrollTrigger);
-
+			const firstAnimationLength = 6;
+			const secondAnimationLength = 5;
 			gsap
 				.timeline({
 					scrollTrigger: {
 						trigger,
 						end: 'bottom 30%',
-						start: 'top 30%',
-						scrub: 0.5
+						start: '30% 30%',
+						scrub: 2
 					}
 				})
 				// LEFT
@@ -28,7 +29,7 @@
 						transformOrigin: 'bottom right',
 						scaleX: 2,
 						scaleY: 0.8,
-						duration: 3,
+						duration: firstAnimationLength,
 						ease: 'elastic.inOut(1,1)'
 					},
 					'0'
@@ -39,9 +40,9 @@
 						transformOrigin: 'bottom right',
 						scaleX: 3,
 						scaleY: 0.6,
-						duration: 3
+						duration: secondAnimationLength
 					},
-					'3'
+					firstAnimationLength
 				)
 				.to(
 					`#left`,
@@ -51,7 +52,7 @@
 						duration: 2,
 						ease: 'elastic.inOut(2,1)'
 					},
-					'6'
+					firstAnimationLength + secondAnimationLength
 				)
 				.to(
 					`#left`,
@@ -61,7 +62,7 @@
 						duration: 5,
 						ease: 'none'
 					},
-					'6'
+					firstAnimationLength + secondAnimationLength
 				)
 				.to(
 					`#left`,
@@ -69,7 +70,7 @@
 						transformOrigin: '50% 50%',
 						duration: 0
 					},
-					'6'
+					firstAnimationLength + secondAnimationLength
 				)
 				//BOOTTOM
 				.to(
@@ -78,7 +79,7 @@
 						transformOrigin: 'top center',
 						scaleY: 1.5,
 						scaleX: 0.8,
-						duration: 3,
+						duration: firstAnimationLength,
 						ease: 'elastic.inOut(1,1)'
 					},
 					'0'
@@ -89,9 +90,9 @@
 						transformOrigin: 'top center',
 						scaleY: 2,
 						scaleX: 0.6,
-						duration: 3
+						duration: secondAnimationLength
 					},
-					'3'
+					firstAnimationLength
 				)
 				.to(
 					`#bottom`,
@@ -101,7 +102,7 @@
 						duration: 2,
 						ease: 'elastic.inOut(2,1)'
 					},
-					'6'
+					firstAnimationLength + secondAnimationLength
 				)
 				.to(
 					`#bottom`,
@@ -110,7 +111,7 @@
 						duration: 5,
 						ease: 'none'
 					},
-					'6'
+					firstAnimationLength + secondAnimationLength
 				)
 				// RIGHT
 				.to(
@@ -119,7 +120,7 @@
 						transformOrigin: 'bottom left',
 						scaleX: 2,
 						scaleY: 0.8,
-						duration: 3,
+						duration: firstAnimationLength,
 						ease: 'elastic.inOut(1,1)'
 					},
 					'0'
@@ -130,9 +131,9 @@
 						transformOrigin: 'bottom left',
 						scaleX: 3,
 						scaleY: 0.6,
-						duration: 3
+						duration: secondAnimationLength
 					},
-					'3'
+					firstAnimationLength
 				)
 				.to(
 					`#right`,
@@ -142,7 +143,7 @@
 						duration: 2,
 						ease: 'elastic.inOut(2,1)'
 					},
-					'6'
+					secondAnimationLength + firstAnimationLength
 				)
 				.to(
 					`#right`,
@@ -151,7 +152,7 @@
 						duration: 5,
 						ease: 'none'
 					},
-					'6'
+					secondAnimationLength + firstAnimationLength
 				)
 				.to(
 					`#right`,
@@ -159,19 +160,16 @@
 						transformOrigin: '50% 50%',
 						duration: 0
 					},
-					'6'
+					secondAnimationLength + firstAnimationLength
 				);
 		}
 	});
 </script>
 
-<section
-	class="h-screen p-8 md:p-24 md:pr-36 pr-16 bg-secondary flex flex-col justify-center overflow-clip"
-	id="start"
->
-	<div class="z-20 relative layout--padding flex justify-center">
+<section class="h-screen bg-secondary flex justify-center overflow-clip" id="start">
+	<div class="z-20 relative flex flex-col justify-end h-full" bind:this={trigger}>
 		<HoverCursor colorTheme="dark" cursorText="THIS IS ME">
-			<div class="w-96" bind:this={trigger}>
+			<div class="w-96">
 				<FaceImg />
 			</div>
 		</HoverCursor>
