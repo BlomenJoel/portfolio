@@ -8,11 +8,12 @@
 	id="about"
 >
 	<Header header="WHO AM I" />
-	<p class="text-xl w-1/3 text-center text-white font-bold mt-8">
+	<p class="text-xl md:w-1/3 text-center text-white font-bold mt-8">
 		I LIKE COFFEE, TRIATHLON, WOOD-WORKING AND DOGS. MY FAVORITE THING IS DEFINITLY DOGS!
 	</p>
-	<p class="text-xl w-1/3 text-center text-white font-bold mt-8">
-		I ALSO THINK THAT SHOES VERY MUCH SHOWS WHO YOU ARE, SO HERE'S ALL THE SHOES THAT I OWN.
+	<p class="text-xl md:w-1/3 text-center text-white font-bold mt-8">
+		I ALSO THINK THAT SHOES VERY MUCH SHOWS WHO YOU ARE AS A PERSON, SO HERE'S ALL THE SHOES THAT I
+		HAVE.
 	</p>
 	<CirclingImages />
 </section>
