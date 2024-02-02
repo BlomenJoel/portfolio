@@ -26,7 +26,7 @@
 		}
 	});
 
-	const pages = ['projects', 'about', 'contact'];
+	const pages = ['start', 'projects', 'about'];
 </script>
 
 <div class="absolute right-0 md:w-36 w-16 h-screen flex flex-col justify-center">

@@ -19,8 +19,7 @@
 						trigger,
 						end: '80% 30%',
 						start: '30% 30%',
-						scrub: 1.5,
-						markers: true
+						scrub: 1.5
 					}
 				})
 				// LEFT

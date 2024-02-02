@@ -8,4 +8,3 @@
 <Face />
 <Projects />
 <About />
-<Contact />

@@ -20,24 +20,23 @@
 						trigger: project,
 						start: 'top bottom ',
 						end: '50% 50%',
-						scrub: 2.3,
-						toggleActions: 'play pause play reverse'
+						scrub: 2.3
 					}
 				})
 				.fromTo(
 					project,
-					{ autoAlpha: 0, y: 200, duration: 0.4 },
-					{ autoAlpha: 1, y: 0, duration: 0.4 }
+					{ autoAlpha: 0, y: 200, duration: 0.7 },
+					{ autoAlpha: 1, y: 0, duration: 0.7 }
 				)
 				.fromTo(
 					element,
-					{ autoAlpha: 0, y: 300, duration: 0.3 },
-					{ autoAlpha: 1, y: 0, duration: 0.3 },
+					{ autoAlpha: 0, y: 100, duration: 0.8 },
+					{ autoAlpha: 1, y: 0, duration: 0.8 },
 					'>'
 				)
 				.fromTo(
 					thirdProject,
-					{ autoAlpha: 0, y: 300, duration: 0.6 },
+					{ autoAlpha: 0, y: 200, duration: 0.6 },
 					{ autoAlpha: 1, y: 0, duration: 0.6 },
 					'>'
 				);
@@ -52,11 +51,11 @@
 			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://raformat.se/sv/">
 				<li class=" flex md:flex-row flex-col gap-4 items-center">
 					<img src="/raformat.png" alt="raformat webpage" class="md:w-2/3" />
-					<div class="md:w-1/3 w-full text-white">
-						<h3 class=" text-3xl">RÅFORMAT</h3>
-						<p>SVELTEKIT</p>
-						<p>PAYLOAD</p>
-						<p>GSAP</p>
+					<div class="md:w-1/3 w-full text-gray">
+						<h3 class="text-3xl text-white">RÅFORMAT</h3>
+						<p class="text-sm">SVELTEKIT</p>
+						<p class="text-sm">PAYLOAD CMS</p>
+						<p class="text-sm">GSAP</p>
 					</div>
 				</li>
 			</HoverCursor>
@@ -69,11 +68,10 @@
 			>
 				<li class=" flex md:flex-row flex-col gap-4 items-center">
 					<img src="/blg.png" alt="Belid Lightning Group webpage" class="md:w-2/3" />
-					<div class="md:w-1/3 w-full text-white">
-						<h3 class="text-3xl">BELID LIGHTNING GROUP</h3>
-						<p>SVELTEKIT</p>
-						<p>PAYLOAD</p>
-						<p>GSAP</p>
+					<div class="md:w-1/3 w-full text-gray">
+						<h3 class="text-3xl text-white">BELID LIGHTNING GROUP</h3>
+						<p class="text-sm">SVELTEKIT</p>
+						<p class="text-sm">SANITY CMS</p>
 					</div>
 				</li>
 			</HoverCursor>
@@ -82,11 +80,11 @@
 			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://queenslab.co/en/">
 				<li class=" flex md:flex-row flex-col gap-4 items-center">
 					<img src="/queenslab.png" alt="QueensLab webpage" class="md:w-2/3" />
-					<div class="md:w-1/3 w-full text-white">
-						<h3 class="text-3xl">QUEENSLAB</h3>
-						<p>SVELTEKIT</p>
-						<p>PAYLOAD</p>
-						<p>GSAP</p>
+					<div class="md:w-1/3 w-full text-gray">
+						<h3 class="text-3xl text-white">QUEENSLAB</h3>
+						<p class="text-sm">SVELTEKIT</p>
+						<p class="text-sm">PAYLOAD CMS</p>
+						<p class="text-sm">GSAP</p>
 					</div>
 				</li>
 			</HoverCursor>
