@@ -17,9 +17,10 @@
 				.timeline({
 					scrollTrigger: {
 						trigger,
-						end: 'bottom 30%',
+						end: '80% 30%',
 						start: '30% 30%',
-						scrub: 2
+						scrub: 1.5,
+						markers: true
 					}
 				})
 				// LEFT
@@ -167,7 +168,7 @@
 </script>
 
 <section class="h-screen bg-secondary flex justify-center overflow-clip" id="start">
-	<div class="z-20 relative flex flex-col justify-end h-full" bind:this={trigger}>
+	<div class="z-20 relative flex flex-col justify-center h-full" bind:this={trigger}>
 		<HoverCursor colorTheme="dark" cursorText="THIS IS ME">
 			<div class="w-96">
 				<FaceImg />
