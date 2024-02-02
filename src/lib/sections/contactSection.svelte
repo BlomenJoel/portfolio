@@ -14,7 +14,7 @@
 			<Tramstop />
 		</div>
 	</div>
-	<div class="flex flex-col mt-[120%]">
+	<div class="flex flex-col md:mt-[20%] mt-[120%]">
 		<HoverCursor colorTheme="dark" cursorText="SEND A EMAIL" link="mailto:blomenjoel@gmail.com">
 			<Header header="REACH OUT" />
 		</HoverCursor>
