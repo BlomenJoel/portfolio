@@ -17,7 +17,7 @@
 			<Tramstop />
 		</div>
 	</div>
-	<div class="flex flex-col gap-8 bg-gray/30 backdrop-blur-sm items-center w-1/2 z-40 p-12">
+	<div class="flex flex-col gap-8 bg-gray/30 backdrop-blur-sm items-center md:w-1/2 z-40 p-12">
 		<p class="text-xl text-center text-white">
 			I like coffee, triathlon, wood-working and dogs. My favorite thing is definitly dogs.
 		</p>
