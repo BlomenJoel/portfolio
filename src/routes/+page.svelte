@@ -12,8 +12,6 @@
 	<meta name="description" content="Joel Blomén portfolio" />
 	<meta property="og:description" content="Joel Blomén portfolio" />
 	<meta property="twitter:description" content="Joel Blomén portfolio" />
-	<meta property="og:image" content="%sveltekit.assets%/favicon.png" />
-	<meta property="twitter:image" content="%sveltekit.assets%/favicon.png" />
 </svelte:head>
 <Face />
 <Projects />
