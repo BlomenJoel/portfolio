@@ -24,11 +24,11 @@
 						width: '100px',
 						padding: `${getYPadding()} 10px`,
 						innerText: cursorText,
-						color: isDarkTheme ? 'white' : 'black',
+						color: 'black',
 						ease: 'elastic',
 						filter: 'none',
 						mixBlendMode: 'normal',
-						backgroundColor: isDarkTheme ? 'black' : 'white'
+						backgroundColor: 'white'
 					});
 				});
 

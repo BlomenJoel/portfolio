@@ -45,7 +45,7 @@
 		border-radius: 50%;
 		pointer-events: none;
 		z-index: 100;
-		background: black;
+		background: white;
 		text-align: center;
 		letter-spacing: 0.1rem;
 	}

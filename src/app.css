@@ -7,7 +7,7 @@
 	body {
 		font-family: 'Proxima Nova', system-ui, sans-serif;
 		scroll-behavior: smooth;
-		@apply cursor-none;
+		@apply cursor-none bg-secondary;
 	}
 
 	.layout--padding {
