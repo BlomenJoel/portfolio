@@ -9,6 +9,8 @@
 	let element: HTMLElement | null = null;
 	let project: HTMLElement | null = null;
 	let thirdProject: HTMLElement | null = null;
+	let fourthProject: HTMLElement | null = null;
+	let fifthProject: HTMLElement | null = null;
 
 	onMount(() => {
 		if (browser && element) {
@@ -28,6 +30,13 @@
 					{ autoAlpha: 0, y: 200, duration: 0.7 },
 					{ autoAlpha: 1, y: 0, duration: 0.7 }
 				)
+
+				.fromTo(
+					fourthProject,
+					{ autoAlpha: 0, y: 300, duration: 0.7 },
+					{ autoAlpha: 1, y: 0, duration: 0.7 },
+					'>'
+				)
 				.fromTo(
 					element,
 					{ autoAlpha: 0, y: 100, duration: 0.8 },
@@ -38,6 +47,12 @@
 					thirdProject,
 					{ autoAlpha: 0, y: 200, duration: 0.6 },
 					{ autoAlpha: 1, y: 0, duration: 0.6 },
+					'>'
+				)
+				.fromTo(
+					fifthProject,
+					{ autoAlpha: 0, y: 500, duration: 0.7 },
+					{ autoAlpha: 1, y: 0, duration: 0.7 },
 					'>'
 				);
 		}
@@ -56,6 +71,19 @@
 						<p class="text-sm">SVELTEKIT</p>
 						<p class="text-sm">PAYLOAD CMS</p>
 						<p class="text-sm">GSAP</p>
+					</div>
+				</li>
+			</HoverCursor>
+		</div>
+		<div class="mx-auto w-[40rem]" bind:this={fourthProject}>
+			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://www.seamlr.com/">
+				<li class="flex md:flex-row flex-col gap-4 items-center">
+					<img src="/seamlr.png" alt="Seamlr native app" class="md:w-2/3" />
+					<div class="md:w-1/3 w-full text-gray">
+						<h3 class="text-3xl text-white">SEAMLR</h3>
+						<p class="text-sm">REACT NATIVE</p>
+						<p class="text-sm">EXPO</p>
+						<p class="text-sm">NESTJS</p>
 					</div>
 				</li>
 			</HoverCursor>
@@ -85,6 +113,20 @@
 						<p class="text-sm">SVELTEKIT</p>
 						<p class="text-sm">PAYLOAD CMS</p>
 						<p class="text-sm">GSAP</p>
+					</div>
+				</li>
+			</HoverCursor>
+		</div>
+
+		<div class="mx-auto w-[40rem]" bind:this={fifthProject}>
+			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://www.parklane.se/">
+				<li class="flex md:flex-row flex-col gap-4 items-center">
+					<img src="/parklane.png" alt="Parklane native app" class="max-h-96" />
+					<div class="md:w-1/3 w-full text-gray">
+						<h3 class="text-3xl text-white">PARKLANE</h3>
+						<p class="text-sm">REACT NATIVE</p>
+						<p class="text-sm">EXPO</p>
+						<p class="text-sm">SVELTEKIT</p>
 					</div>
 				</li>
 			</HoverCursor>

@@ -10,7 +10,7 @@
 		<div class="z-0 overflow-clip w-screen min-h-screen h-full">
 			<Tram />
 		</div>
-		<div class=" z-10 absolute w-72 top-28">
+		<div class="z-10 absolute w-72 top-28">
 			<Tramstop />
 		</div>
 	</div>
