@@ -19,6 +19,21 @@
 			gsap
 				.timeline({
 					scrollTrigger: {
+						trigger: fourthProject,
+						start: 'top bottom ',
+						end: '50% 50%',
+						scrub: 2.3
+					}
+				})
+				.fromTo(
+					fourthProject,
+					{ autoAlpha: 0, y: 300, duration: 0.7 },
+					{ autoAlpha: 1, y: 0, duration: 0.7 },
+					'>'
+				);
+			gsap
+				.timeline({
+					scrollTrigger: {
 						trigger: project,
 						start: 'top bottom ',
 						end: '50% 50%',
@@ -29,29 +44,49 @@
 					project,
 					{ autoAlpha: 0, y: 200, duration: 0.7 },
 					{ autoAlpha: 1, y: 0, duration: 0.7 }
-				)
-
-				.fromTo(
-					fourthProject,
-					{ autoAlpha: 0, y: 300, duration: 0.7 },
-					{ autoAlpha: 1, y: 0, duration: 0.7 },
-					'>'
-				)
+				);
+			gsap
+				.timeline({
+					scrollTrigger: {
+						trigger: element,
+						start: 'top bottom ',
+						end: '50% 50%',
+						scrub: 2.3
+					}
+				})
 				.fromTo(
 					element,
 					{ autoAlpha: 0, y: 100, duration: 0.8 },
 					{ autoAlpha: 1, y: 0, duration: 0.8 },
 					'>'
-				)
+				);
+			gsap
+				.timeline({
+					scrollTrigger: {
+						trigger: thirdProject,
+						start: 'top bottom ',
+						end: '50% 50%',
+						scrub: 2.3
+					}
+				})
 				.fromTo(
 					thirdProject,
 					{ autoAlpha: 0, y: 200, duration: 0.6 },
 					{ autoAlpha: 1, y: 0, duration: 0.6 },
 					'>'
-				)
+				);
+			gsap
+				.timeline({
+					scrollTrigger: {
+						trigger: fifthProject,
+						start: 'top bottom ',
+						end: '50% 50%',
+						scrub: 2.3
+					}
+				})
 				.fromTo(
 					fifthProject,
-					{ autoAlpha: 0, y: 500, duration: 0.7 },
+					{ autoAlpha: 0, y: 300, duration: 0.7 },
 					{ autoAlpha: 1, y: 0, duration: 0.7 },
 					'>'
 				);
@@ -61,7 +96,7 @@
 
 <section class="p-8 md:p-24 md:pr-36 pr-16 bg-main flex flex-col items-center" id="projects">
 	<Header header="SELECTED PROJECTS" />
-	<ul class="flex flex-row gap-12 mt-24 flex-wrap justify-center w-full">
+	<ul class="flex flex-row gap-48 mt-24 flex-wrap justify-center w-full">
 		<div class="ml-auto w-[40rem]" bind:this={project}>
 			<HoverCursor colorTheme="dark" cursorText="CHECK IT OUT" link="https://raformat.se/sv/">
 				<li class=" flex md:flex-row flex-col gap-4 items-center">

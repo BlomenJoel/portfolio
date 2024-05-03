@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import { explodingText } from '$lib/utils/explodingText';
+	import { explodingEffect, explodingEffectLeaving, explodingText } from '$lib/utils/explodingText';
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
 
@@ -11,20 +11,35 @@
 		if (browser) {
 			explodingText(TEXT_ANIMATION_ID);
 			gsap.utils.toArray('section').forEach((section: any) => {
-				gsap.timeline({
-					scrollTrigger: {
-						trigger: section,
-						start: 'top 30%',
-						end: 'bottom 30%',
-						markers: false,
-						onEnter: (self: any) => {
-							currentId = self.trigger.id;
-						},
-						onEnterBack: (self: any) => {
-							currentId = self.trigger.id;
+				gsap
+					.timeline({
+						scrollTrigger: {
+							trigger: section,
+							start: 'top 30%',
+							end: 'bottom 30%',
+							toggleActions: 'restart none restart none',
+							markers: false,
+							onEnter: (self: any) => {
+								currentId = self.trigger.id;
+							},
+							onEnterBack: (self: any) => {
+								currentId = self.trigger.id;
+							}
 						}
-					}
-				});
+					})
+					.add(function () {
+						const elements = document.getElementsByClassName(`char-${currentId}`);
+						if (elements) {
+							explodingEffect(Array.from(elements));
+						}
+					}, '0')
+
+					.add(function () {
+						const elements = document.getElementsByClassName(`char-${currentId}`);
+						if (elements) {
+							explodingEffectLeaving(Array.from(elements));
+						}
+					}, '0.7');
 			});
 		}
 	});
@@ -42,7 +57,7 @@
 				class={currentId === page ? 'text-white font-bold' : 'text-inactive font-normal'}
 				id={'test-' + page}
 			>
-				<a href="/#{page}" class="uppercase">{page}</a>
+				<a href="/#{page}" class="uppercase" id={'test-' + page}>{page}</a>
 			</li>
 		{/each}
 	</ul>
